@@ -1,0 +1,35 @@
+{
+  "name": "jsonp-integrity-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -fr dist; yarn webpack && ls -l dist/*.{js,css}"
+  },
+  "devDependencies": {
+    "@types/react": "16.3.5",
+    "@types/react-dom": "16.0.4",
+    "babel-core": "^6.26.0",
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.11",
+    "image-webpack-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "webpack-plugin-hash-output": "npm:webpack-plugin-hash-output-mini-css@3.1.0-beta.1",
+    "uglifyjs-webpack-plugin": "npm:uglifyjs-webpack-plugin-temp-fork@1.2.6-beta.1",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^2.1.0",
+    "postcss-shopify": "^1.0.1",
+    "sass-loader": "^6.0.6",
+    "sass-resources-loader": "^1.3.3",
+    "style-loader": "^0.20.1",
+    "url-loader": "^1.0.0",
+    "webpack": "^4",
+    "webpack-bundle-analyzer": "^2.10.0",
+    "webpack-cli": "*"
+  },
+  "dependencies": {
+    "babel-preset-shopify": "^16.2.0",
+    "history": "^4.7.2"
+  }
+}
